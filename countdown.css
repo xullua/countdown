@@ -1,0 +1,131 @@
+@font-face {
+    font-family: 'LSeedJP';
+    src: url(https://xullua.com/font/LSeedJPRg.woff) format('woff');
+    font-weight: 500, normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LSeedJP';
+    src: url(https://xullua.com/font/LSeedJPBd.woff) format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+* {
+    font-family: "LSeedJP", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    overflow: hidden;
+    background: #161616;
+    color: #FFFFFF;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.countdown {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    text-align: center;
+}
+
+#countTimer {
+    margin: 0 auto;
+    font-size: 100px;
+    font-weight: bold;
+    transition: 1s;
+}
+
+#countTimer span {
+    font-size: 80px;
+    transition: 1s;
+}
+
+#countTimer p {
+    font-size: 40px;
+    transition: 1s;
+}
+
+@media screen and (max-width: 900px) {
+    #countTimer {
+        font-size: 80px;
+    }
+
+    #countTimer span {
+        font-size: 65px;
+    }
+
+    #countTimer p {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    #countTimer {
+        font-size: 60px;
+    }
+
+    #countTimer span {
+        font-size: 50px;
+    }
+
+    #countTimer p {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #countTimer {
+        font-size: 40px;
+    }
+
+    #countTimer span {
+        font-size: 30px;
+    }
+}
+
+.bottom {
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom .copyright {
+    margin: 0 0 0 10px;
+    font-size: 12px;
+}
+
+.bottom .copyright a {
+    color: #ffffff8e;
+    text-decoration: none;
+}
+
+.bottom .copyright a:hover {
+    color: #ffffffd7;
+}
+
+.bottom .link {
+    font-size: 10px;
+    margin: 0 10px 0 0;
+}
+
+.bottom .link a {
+    text-decoration: none;
+    color: #c0afff91;
+    margin: 0 0 0 5px;
+}
+
+.bottom .link a:hover {
+    color: #d7ccffb6;
+}
