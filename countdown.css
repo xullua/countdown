@@ -18,7 +18,8 @@
     padding: 0;
 }
 
-html {
+html,
+body {
     overflow: hidden;
     background: #161616;
     color: #FFFFFF;
