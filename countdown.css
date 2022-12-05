@@ -38,57 +38,66 @@ body {
     text-align: center;
 }
 
-#countTimer {
+.countdown div {
+    margin: 0 auto;
+}
+
+.countdown .text {
+    font-size: 18px;
+}
+
+.timer {
     margin: 0 auto;
     font-size: 100px;
     font-weight: bold;
+    line-height: 1.2;
     transition: 1s;
 }
 
-#countTimer span {
+.timer span {
     font-size: 80px;
     transition: 1s;
 }
 
-#countTimer p {
+.timer p {
     font-size: 40px;
     transition: 1s;
 }
 
 @media screen and (max-width: 900px) {
-    #countTimer {
+    .timer {
         font-size: 80px;
     }
 
-    #countTimer span {
+    .timer span {
         font-size: 65px;
     }
 
-    #countTimer p {
+    .timer p {
         font-size: 30px;
     }
 }
 
 @media screen and (max-width: 750px) {
-    #countTimer {
+    .timer {
         font-size: 60px;
     }
 
-    #countTimer span {
+    .timer span {
         font-size: 50px;
     }
 
-    #countTimer p {
+    .timer p {
         font-size: 20px;
     }
 }
 
 @media screen and (max-width: 600px) {
-    #countTimer {
+    .timer {
         font-size: 40px;
     }
 
-    #countTimer span {
+    .timer span {
         font-size: 30px;
     }
 }

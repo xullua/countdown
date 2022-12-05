@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>フォートナイトカウントダウン - シーズン終了まで</title>
+    <meta name="description" content="フォートナイトの今シーズン終了までをカウントダウンします。動作は軽く、シンプルなデザインです。誰でも簡単に使用できます。">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@xullua">
+    <meta name="twitter:title" content="フォートナイトカウントダウン - シーズン終了まで">
+    <meta name="twitter:description" content=""">
+    <meta name=" twitter:image" content="https://countdown.xullua.com/countdown.png">
+
+    <link rel="shortcut icon" href="favicon.ico">
+    <!-- CSS -->
+    <link rel="stylesheet" href="countdown.css">
+
+    <!-- アナリティクス -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-E41SGET6F9"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-E41SGET6F9');
+    </script>
+</head>
+
+<body>
+    <main>
+        <section class="countdown">
+            <p class="timer" id="countTimer-fortnite"></p>
+        </section>
+    </main>
+    <section class="bottom">
+        <p class="copyright"><a href="https://xullua.com" target="_blank">©Xullua</a></p>
+        <div class="link">
+            <a href="https://fortnite.com" target="_blank">フォートナイト</a>
+            <a href="https://xullua.com/policy/privacy" target="_blank">プライバシーポリシー</a>
+            <a href="https://xullua.com/tools" target="_blank">その他のツール</a>
+        </div>
+    </section>
+
+    <style>
+        main {
+            background-image: url(https://countdown.xullua.com/fortnite-ch4s1.jpeg);
+        }
+    </style>
+
+    <script>
+        var countDownDate = new Date("2023/3/10 0:0:00").getTime();
+        var x = setInterval(function () {
+            var now = new Date().getTime();
+
+            var distance = countDownDate - now;
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById("countTimer-fortnite").innerHTML = "<p>チャプター4シーズン1 終了まで</p>" + days + "<span>日</span>" + hours + "<span>時</span>"
+                + minutes + "<span>分</span>" + seconds + "<span>秒</span>";
+
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("countTimer-fortnite").innerHTML = "<p>終了</p>";
+            }
+        }, 1000);
+    </script>
+</body>
+
+</html>
